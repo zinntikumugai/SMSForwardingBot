@@ -20,19 +20,19 @@ Slack<br>
 
 ## 必須ライブラリ
 
-- pyserial==3.5b0
-- psutil==5.8.0
-- schedule==1.1.0
-- slack-sdk==3.18.3
-- slack-bolt==1.15.0
-- gsm0338==1.0.0
-- jinja2==2.11.3
+[poetry](https://python-poetry.org/)
 
 ## インストール方法
 
 ```bash
 $ cd ~/
 $ git clone https://github.com/SystemzeusInc/SMSForwardingBot.git
+
+$ pyenv install 3.11.4
+$ poetry env use 3.11.4
+$ poetry install --no-cache
+
+# poetry run python main.py
 ```
 
 ## セットアップ方法
